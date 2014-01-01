@@ -39,7 +39,7 @@
 
 <!-- css -->
 
-	<link rel="stylesheet" href="<txp:site_url />txp.foundation/css/foundation.css">
+	<link rel="stylesheet" href="<txp:site_url />txp.foundation/css/application.css">
 
 <!-- HTML5/Media Queries support for IE8 (you can remove this section and the corresponding 'js' directory file if you don't intend to support IE8) -->
     <!--[if lt IE 9]>

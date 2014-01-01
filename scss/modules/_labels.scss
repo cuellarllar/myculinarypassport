@@ -1,0 +1,53 @@
+%label {
+  @include font-size(1.2);
+  padding: .1em .45em;
+  border-radius: 3px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+// ## Label (default) `.label`
+//
+// Styleguide 9.1.
+
+.label {
+  @extend %label;
+  background-color: $light-gray;
+}
+
+// ## Label Info `.label_info`
+//
+// Styleguide 9.2.
+
+.label_info {
+  @extend %label;
+  background-color: $light-blue;
+}
+
+// ## Label Success `.label_success`
+//
+// Styleguide 9.3.
+
+.label_success {
+  @extend %label;
+  background-color: $green;
+}
+
+// ## Label Warning `.label_warning`
+//
+// Styleguide 9.4.
+
+.label_warning {
+  @extend %label;
+  background-color: $orange;
+}
+
+// ## Label Error `.label_error`
+//
+// Styleguide 9.5.
+
+.label_error {
+  @extend %label;
+  background-color: $red;
+}

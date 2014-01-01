@@ -1,0 +1,96 @@
+table {
+  margin: ($base-line-height / 2) 0;
+  width: 100%;
+}
+
+th {
+  border-bottom: 1px solid darken($base-border-color, 15%);
+  font-weight: bold;
+  padding: ($base-line-height / 2) 0;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid $base-border-color;
+  padding: ($base-line-height / 2) 0;
+}
+
+tr, td, th {
+  vertical-align: middle;
+}
+
+// STYLED TABLES
+
+// .table {
+//   border: 1px solid #cbcbcb;
+//   border-spacing: 0;
+//   // Remove spacing between table cells (from Normalize.css)
+//   border-collapse: collapse;
+//   empty-cells: show;
+
+//   caption {
+//     padding: 1em 0;
+//     color: #000;
+//     text-align: center;
+//     font: italic 85%/1 arial, sans-serif;
+//   }
+
+//   td,
+//   th {
+//     overflow: visible; // to make ths where the title is really long work
+//     margin: 0;
+//     padding: 6px 12px; // cell padding 
+//     border-width: 0 0 0 1px;
+//     border-left: 1px solid #cbcbcb; // inner column border
+//     font-size: inherit;
+//   }
+
+//   td:first-child,
+//   th:first-child {
+//     border-left-width: 0;
+//   }
+
+//   thead {
+//     background: #e0e0e0;
+//     color: #000;
+//     vertical-align: bottom;
+//     text-align: left;
+//   }
+// }
+
+
+// //  STRIPING:
+// //  even - #fff (white)
+// //  odd  - #f2f2f2 (light gray)
+
+// .table td {
+//   background-color: transparent;
+// }
+// .table-odd td {
+//   background-color: #f2f2f2;
+// }
+
+// // NTH-CHILD SELECTOR FOR MODERN BROWSERS
+// .table-striped tr:nth-child(2n-1) > td {
+//   background-color: #f2f2f2;
+// }
+
+// /* BORDERED TABLES */
+// .table-bordered td {
+//   border-bottom: 1px solid #cbcbcb;
+// }
+// .table-bordered tbody > tr:last-child td,
+// .table-horizontal tbody > tr:last-child td {
+//   border-bottom-width: 0;
+// }
+
+
+// // HORIZONTAL BORDERED TABLES
+// .table-horizontal td,
+// .table-horizontal th {
+//   border-width: 0 0 1px 0;
+//   border-bottom: 1px solid #cbcbcb;
+// }
+// .table-horizontal tbody > tr:last-child td {
+//   border-bottom-width: 0;
+// }

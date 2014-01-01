@@ -1,0 +1,161 @@
+// BASE BUTTON
+// based on https://github.com/csswizardry/beautons/blob/master/beautons.css
+///////////////////////////////////////////////////////////////////////////////
+
+%button {       
+  @include font-size(1.4);
+  display: inline-block;        
+  overflow: visible;              
+  margin: 0;
+  padding: 0 0.8em;       
+  height: 3em;           
+  border: none; 
+  border-radius: 3px;        
+  background-color: $medium-blue;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.6);
+  color: #fff;     
+  vertical-align: middle;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);    
+  white-space: nowrap;
+  font-weight: bold;         
+  line-height: 3;
+  cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited{
+    color:#fff;
+    text-decoration:none;
+  }
+  &:hover{
+    background-color: darken($medium-blue, 5%);
+  }
+  &:active,
+  &:focus{
+    outline:none;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.5) inset;
+  }
+  &::-moz-focus-inner {
+    padding: 0; 
+    border: 0;
+  }         
+}
+
+
+// SIZES
+///////////////////////////////////////////////////////////////////////////////
+
+// ## Base Button `.button`
+//
+// Styleguide 6.1.
+
+.button {
+  @extend %button;
+}
+
+// ## Small Button `.button_small`
+//
+// Styleguide 6.2.
+
+.button_small {
+  @extend %button;
+  padding-right: 0.5em;
+  padding-left: 0.5em;
+  height: 2em;
+  line-height: 2;
+}
+
+// ## Large Button `.button_large`
+//
+// Styleguide 6.3.
+
+.button_large {
+  @extend %button;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  height: 4em;
+  line-height: 4;
+}
+
+// ## Large Button `.button_full`
+//
+// Styleguide 6.4.
+
+.button_full {
+  @extend %button;
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+// FUNCTIONS
+///////////////////////////////////////////////////////////////////////////////
+
+// ## Positive Button `.button_positive`
+//
+// Styleguide 6.5.
+
+.button_positive{
+  @extend %button;
+  background-color: $green;
+  color: #fff;
+  &:hover{
+    background-color: darken($green, 5%);
+  }
+}
+
+// ## Negative Button `.button_negative`
+//
+// Styleguide 6.6.
+
+.button_negative {
+  @extend %button;
+  background-color: $red;
+  color: #fff;
+  &:hover{
+    background-color: darken($red, 5%);
+  }
+}
+
+// ## Warning Button `.button_warning`
+//
+// Styleguide 6.7.
+
+.button_warning {
+  @extend %button;
+  background-color: $orange;
+  color: #fff;
+  &:hover{
+    background-color: darken($orange, 5%);
+  }
+}
+
+// ## Secondary Button `.button_secondary`
+//
+// Styleguide 6.8.
+
+.button_secondary {
+  @extend %button;
+  background-color: $light-gray;
+  color: #fff;
+  &:hover{
+    background-color: darken($light-gray, 5%);
+  }
+}
+
+// ## Disabled Button `.button_disabled`
+//
+// Styleguide 6.9.
+
+.button_disabled {
+  @extend %button;
+  background-color: $light-blue;
+  cursor: default;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $light-blue;
+  }
+}

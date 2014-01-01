@@ -1,0 +1,36 @@
+// .nav, 
+// .nav ul,
+// nav ul, 
+// nav ol {
+//   margin:0; 
+//   padding: 0;
+//   list-style: none;
+//   & > li,
+//   & > li > a {
+//     @include inline-block();
+//   }
+// }
+
+// .nav-stacked {
+//   & > li {
+//     display: list-item;
+//   }
+//   & > li > a {
+//     display: block;
+//   }
+// }
+
+// .nav-banner {
+//   text-align: center;
+// }
+
+// .nav-inline {
+//   li::before {
+//     margin: 0 .5em 0 .3em;
+//     // color: $color-note;
+//     content: " | ";
+//   }
+//   li:first-child::before { margin: 0; 
+//     content: ""; 
+//   }
+// }

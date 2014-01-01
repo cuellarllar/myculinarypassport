@@ -1,0 +1,67 @@
+%alert {
+  margin-bottom: $base-line-height / 2;
+  padding: $base-line-height / 2;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 3px;
+}
+
+// ## Alert Error `.alert_error`
+//
+// Styleguide 7.1.
+
+.alert_error {
+  @extend %alert;
+  background: $error-color;
+  a {
+    color: darken($error-color, 40%);
+    &:hover {
+      color: darken($error-color, 70%);
+    }
+  }
+}
+
+// ## Alert Warning `.alert_warning`
+//
+// Styleguide 7.2.
+
+.alert_warning {
+  @extend %alert;
+  background: $notice-color;
+  a {
+    color: darken($notice-color, 40%);
+    &:hover {
+      color: darken($notice-color, 70%);
+    }
+  }
+}
+
+// ## Alert Success `.alert_success`
+//
+// Styleguide 7.3.
+
+.alert_success {
+  @extend %alert;
+  background: $success-color;
+  a {
+    color: darken($success-color, 40%);
+    &:hover {
+      color: darken($success-color, 70%);
+    }
+  }
+}
+
+// ## Alert Info `.alert_info`
+//
+// Styleguide 7.4.
+
+.alert_info {
+  @extend %alert;
+  background: $light-blue;
+  a {
+    color: darken($light-blue, 40%);
+    &:hover {
+      color: darken($light-blue, 70%);
+    }
+  }
+}

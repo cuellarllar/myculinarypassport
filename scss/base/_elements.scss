@@ -1,15 +1,8 @@
-// ## Specimen
-// We use Helvetica Neue as our main typeface, and the base font size is 1.4rem (that's equivalent to 14px)
-//
-// Styleguide 2.1.
-
 html {
   font-size: 62.5%; // Sets up base 10
-
   @media only screen and (max-width: $small-screen) {
     font-size: 55%; // Smaller type for small devices
   }
-
 }
 
 body {
@@ -21,10 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-// ## Headings
-// 
-//
-// Styleguide 2.2.
+// HEADINGS
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0 0  0.3em 0;
@@ -90,11 +80,7 @@ img {
   max-width: 100%;
 }
 
-// ## Inline text-level semantics
-// 
-//
-// Styleguide 2.4.
-
+// INLINE TEXT SEMANTICS
 abbr, acronym {
   border-bottom: 1px dotted $base-border-color;
   cursor: help;
@@ -117,11 +103,9 @@ small,
 cite {
   color: lighten($base-font-color, 25);
   font-style: italic;
-
   &:before {
     content: '\2014 \00A0';
   }
-
 }
 
 blockquote {
@@ -131,11 +115,7 @@ blockquote {
   color: lighten($base-font-color, 15);
 }
 
-// ## Alignment
-// Helper classes to align text: .text-left, .text-right, .text-center, .text-justify
-//
-// Styleguide 2.3.
-
+// ALIGNMENT
 .text-left {
   text-align: left;
 }
@@ -163,12 +143,10 @@ ul, ol {
 dl {
   margin-bottom: $base-line-height / 2;
   line-height: $base-line-height;
-
   dt {
     margin-top: $base-line-height / 2;
     font-weight: bold;
   }
-
   dd {
     margin: 0;
   }

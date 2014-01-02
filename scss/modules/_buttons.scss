@@ -46,18 +46,12 @@
 // SIZES
 ///////////////////////////////////////////////////////////////////////////////
 
-// ## Base Button `.button`
-//
-// Styleguide 6.1.
-
+// BASE BUTTON
 .button {
   @extend %button;
 }
 
-// ## Small Button `.button_small`
-//
-// Styleguide 6.2.
-
+// SMALL BUTTON
 .button_small {
   @extend %button;
   padding-right: 0.5em;
@@ -66,10 +60,7 @@
   line-height: 2;
 }
 
-// ## Large Button `.button_large`
-//
-// Styleguide 6.3.
-
+// LARGE BUTTON
 .button_large {
   @extend %button;
   padding-right: 1.5em;
@@ -78,10 +69,7 @@
   line-height: 4;
 }
 
-// ## Large Button `.button_full`
-//
-// Styleguide 6.4.
-
+// FULL WIDTH BUTTON
 .button_full {
   @extend %button;
   padding-right: 0;
@@ -93,10 +81,7 @@
 // FUNCTIONS
 ///////////////////////////////////////////////////////////////////////////////
 
-// ## Positive Button `.button_positive`
-//
-// Styleguide 6.5.
-
+// BUTTON POSITIVE
 .button_positive{
   @extend %button;
   background-color: $green;
@@ -106,10 +91,7 @@
   }
 }
 
-// ## Negative Button `.button_negative`
-//
-// Styleguide 6.6.
-
+// BUTTON NEGATIVE
 .button_negative {
   @extend %button;
   background-color: $red;
@@ -119,10 +101,7 @@
   }
 }
 
-// ## Warning Button `.button_warning`
-//
-// Styleguide 6.7.
-
+// BUTTON WARNING
 .button_warning {
   @extend %button;
   background-color: $orange;
@@ -132,10 +111,7 @@
   }
 }
 
-// ## Secondary Button `.button_secondary`
-//
-// Styleguide 6.8.
-
+// BUTTON SECONDARY
 .button_secondary {
   @extend %button;
   background-color: $light-gray;
@@ -145,10 +121,7 @@
   }
 }
 
-// ## Disabled Button `.button_disabled`
-//
-// Styleguide 6.9.
-
+// DISABLED BUTTON
 .button_disabled {
   @extend %button;
   background-color: $light-blue;

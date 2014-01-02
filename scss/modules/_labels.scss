@@ -7,46 +7,31 @@
   font-weight: bold;
 }
 
-// ## Label (default) `.label`
-//
-// Styleguide 9.1.
-
+// DEFAULT LABEL
 .label {
   @extend %label;
   background-color: $light-gray;
 }
 
-// ## Label Info `.label_info`
-//
-// Styleguide 9.2.
-
+// LABEL INFO
 .label_info {
   @extend %label;
   background-color: $light-blue;
 }
 
-// ## Label Success `.label_success`
-//
-// Styleguide 9.3.
-
+// LABEL SUCCESS
 .label_success {
   @extend %label;
   background-color: $green;
 }
 
-// ## Label Warning `.label_warning`
-//
-// Styleguide 9.4.
-
+// LABEL WARNING
 .label_warning {
   @extend %label;
   background-color: $orange;
 }
 
-// ## Label Error `.label_error`
-//
-// Styleguide 9.5.
-
+// LABEL ERROR
 .label_error {
   @extend %label;
   background-color: $red;

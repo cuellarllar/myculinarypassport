@@ -7,10 +7,7 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px rgba(darken($form-border-color
 $form-font-size: $base-font-size;
 $form-font-family: $base-font-family;
 
-// ## Basic form styling
-//
-// Styleguide 8.1.
-
+// BASIC FORM STYLES
 fieldset {
   margin: 0 0 ($base-line-height / 2) 0;
   padding: $base-line-height;
@@ -29,11 +26,9 @@ select {
 label {
   margin-bottom: $base-line-height / 4;
   font-weight: bold;
-
   &.required:after {
     content: "*";
   }
-
   abbr {
     display: none;
   }
@@ -52,11 +47,9 @@ textarea,
   box-shadow: $form-box-shadow;
   font-size: $form-font-size;
   font-family: $form-font-family;
-
   &:hover {
     border-color: $form-border-color-hover;
   }
-
   &:focus {
     outline: none;
     border-color: $form-border-color-focus;
@@ -78,7 +71,7 @@ input[type="color"] {
   height: $base-line-height * 2;
 }
 
-// Styled select dropdowns
+// STYLED SELECT DROPDOWNS
 select {
   margin-bottom: $base-line-height;
   padding: 0.5em 2em 0.5em 0.5em;
@@ -97,7 +90,7 @@ select {
   }
 }
 
-// Form buttons
+// FORM BUTTONS
 button,
 input[type="submit"] {
   @extend %button;
@@ -108,7 +101,7 @@ input[type="submit"] {
   user-select: none;
 }
 
-// Disabled items
+// DISABLED ITEMS
 input,
 select,
 textarea {

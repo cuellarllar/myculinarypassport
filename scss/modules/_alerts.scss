@@ -6,10 +6,7 @@
   border-radius: 3px;
 }
 
-// ## Alert Error `.alert_error`
-//
-// Styleguide 7.1.
-
+// ALERT ERROR
 .alert_error {
   @extend %alert;
   background: $error-color;
@@ -21,10 +18,7 @@
   }
 }
 
-// ## Alert Warning `.alert_warning`
-//
-// Styleguide 7.2.
-
+// ALERT WARNING
 .alert_warning {
   @extend %alert;
   background: $notice-color;
@@ -36,10 +30,7 @@
   }
 }
 
-// ## Alert Success `.alert_success`
-//
-// Styleguide 7.3.
-
+// ALERT SUCCESS
 .alert_success {
   @extend %alert;
   background: $success-color;
@@ -51,10 +42,7 @@
   }
 }
 
-// ## Alert Info `.alert_info`
-//
-// Styleguide 7.4.
-
+// ALERT INFO
 .alert_info {
   @extend %alert;
   background: $light-blue;

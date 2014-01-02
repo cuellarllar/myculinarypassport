@@ -1,15 +1,28 @@
-//  LAYOUT HELPERS
+//  GLOBAL LAYOUT
 ///////////////////////////////////////////////////////////////////////////////
 
-@mixin l-constrained() {
-  margin: 0 auto;
-  max-width: 720px;
-  width: 95%;
-  @media only screen and (min-width: $small-screen) {
-    width: 90%;
-  }
+
+.l-blog--wrapper {
+  @include outer-container;
+  max-width: 900px;
 }
 
-.l-constrained {
-  @include l-constrained();
+.l-blog--main {
+  @include media($small-screen)  {
+    @include span-columns(8);
+  }
+  padding: 10px;
+}
+
+.l-blog--aside {
+  @include media($small-screen)  {
+    @include span-columns(4);
+  }
+  padding: 10px;
+}
+
+.l-footer {
+  @include font-size (1.2);
+  padding: 5px 20px 0 5px;
+  border-top: 1px dashed $light-gray;
 }

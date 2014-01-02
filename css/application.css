@@ -523,7 +523,16 @@ dl {
     clear: both; }
 
 .l-header {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   padding: 10px; }
+  .l-header:before, .l-header:after {
+    content: " ";
+    display: table; }
+  .l-header:after {
+    clear: both; }
 
 @media screen and (min-width: 35em) {
   .l-header--brand {

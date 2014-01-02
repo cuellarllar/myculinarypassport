@@ -9,6 +9,7 @@
 
 // HEADER
 .l-header {
+  @include outer-container;
   padding: 10px;
 }
 

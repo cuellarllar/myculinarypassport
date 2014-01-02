@@ -29,14 +29,6 @@
 
 	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
 
-<!-- HTML5/Media Queries support for IE8 (you can remove this section and the corresponding 'js' directory file if you don't intend to support IE8) -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-  <![endif]-->
-
-	<script src="<txp:site_url />txp.smacss/js/vendor/custom.modernizr.js"></script>
-	
 </head>
 
 <body class="<txp:section />-page">

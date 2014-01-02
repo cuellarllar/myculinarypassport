@@ -360,8 +360,9 @@ body {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0 0  0.3em 0;
-  font-weight: 300;
+  font-weight: bold;
   line-height: 1.25;
   text-rendering: optimizeLegibility; }
 
@@ -509,38 +510,62 @@ dl {
 .is-invisible {
   visibility: hidden; }
 
-.l-blog--wrapper {
+.l-container {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
   max-width: 900px; }
-  .l-blog--wrapper:before, .l-blog--wrapper:after {
+  .l-container:before, .l-container:after {
     content: " ";
     display: table; }
-  .l-blog--wrapper:after {
+  .l-container:after {
     clear: both; }
 
-.l-blog--main {
+.l-header {
+  padding: 10px; }
+
+@media screen and (min-width: 35em) {
+  .l-header--brand {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .l-header--brand:last-child {
+      margin-right: 0; } }
+
+.l-header--nav {
+  text-align: center; }
+  @media screen and (min-width: 35em) {
+    .l-header--nav {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      text-align: right; }
+      .l-header--nav:last-child {
+        margin-right: 0; } }
+
+.l-content {
   padding: 10px; }
   @media screen and (min-width: 35em) {
-    .l-blog--main {
+    .l-content {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 65.88078%; }
-      .l-blog--main:last-child {
+      .l-content:last-child {
         margin-right: 0; } }
 
-.l-blog--aside {
+.l-aside {
   padding: 10px; }
   @media screen and (min-width: 35em) {
-    .l-blog--aside {
+    .l-aside {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%; }
-      .l-blog--aside:last-child {
+      .l-aside:last-child {
         margin-right: 0; } }
 
 .l-footer {

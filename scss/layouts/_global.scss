@@ -1,26 +1,48 @@
 //  GLOBAL LAYOUT
 ///////////////////////////////////////////////////////////////////////////////
 
-
-.l-blog--wrapper {
+// GRID CONTAINER
+.l-container {
   @include outer-container;
   max-width: 900px;
 }
 
-.l-blog--main {
+// HEADER
+.l-header {
+  padding: 10px;
+}
+
+.l-header--brand {
+  @include media($small-screen)  {
+    @include span-columns(8);
+  }
+}
+
+.l-header--nav {
+  @include media($small-screen)  {
+    @include span-columns(4);
+    text-align: right;
+  }
+  text-align: center;
+}
+
+// MAIN COLUMN CONTENT
+.l-content {
   @include media($small-screen)  {
     @include span-columns(8);
   }
   padding: 10px;
 }
 
-.l-blog--aside {
+// SIDEBAR
+.l-aside {
   @include media($small-screen)  {
     @include span-columns(4);
   }
   padding: 10px;
 }
 
+// FOOTER
 .l-footer {
   @include font-size (1.2);
   padding: 5px 20px 0 5px;

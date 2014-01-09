@@ -90,6 +90,12 @@
 
           <txp:else />
 
+          <!-- else is this a tag page? -->
+          <txp:if_section name="tag">
+            <h1>Tag: &quot;<txp:tru_tags_tag_parameter />&quot;</h1>
+            <txp:tru_tags_handler listform="article_listing" />
+          </txp:if_section>
+
           <!-- else is this an article author list? -->
           <txp:if_author>
 

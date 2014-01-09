@@ -4,6 +4,9 @@
   <txp:if_individual_article>
     <h1 itemprop="name"><txp:title /></h1>
     <txp:else />
+    <txp:if_article_image>
+      <txp:images form="images" />
+    </txp:if_article_image>
     <h1 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h1>
   </txp:if_individual_article>
 
@@ -21,13 +24,16 @@
     </a>
   </p>
 
-  <txp:if_article_image>
-    <txp:images form="images" />
-  </txp:if_article_image>
+  
 
-  <div itemprop="articleBody">
-    <txp:body />
-  </div>
+  <txp:if_individual_article>
+    <div itemprop="articleBody">
+      <txp:body />
+    </div>
+    <txp:else />
+    
+    <p><txp:rss_auto_excerpt words="20" striptags="1" linktext="Read More" linkwraptag="span" /></p>
+  </txp:if_individual_article>
 
   <p><strong><txp:text item="author" /></strong> <span itemprop="author"><txp:author link="1" this_section="1" /></span>
 

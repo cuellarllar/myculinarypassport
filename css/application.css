@@ -656,7 +656,23 @@ dl {
       color: #081b1f; }
 
 .post {
+  *zoom: 1;
   margin-bottom: 40px; }
+  .post:before, .post:after {
+    content: " ";
+    display: table; }
+  .post:after {
+    clear: both; }
+
+.post--image {
+  float: left;
+  padding: 0 10px 10px 0;
+  width: 100px;
+  height: 100px; }
+  @media screen and (min-width: 48em) {
+    .post--image {
+      width: 200px;
+      height: 200px; } }
 
 .button, .button_small, .button_large, .button_full, .button_positive, .button_negative, .button_warning, .button_secondary, .button_disabled, button,
 input[type="submit"] {

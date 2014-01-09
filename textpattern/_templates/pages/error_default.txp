@@ -49,12 +49,23 @@
     
       <txp:output_form form="tf_search_form" />
 
-      <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
-      <p><txp:feed_link label="RSS" class="feed-rss" /> / <txp:feed_link flavor="atom" label="Atom" class="feed-atom" /></p>
+      <h4>Latest posts</h4>
+      <txp:recent_articles label="" limit="5" break="li" wraptag="ul" class="" />
 
-      <h4><txp:text item="external_links" /></h4>
-      <txp:linklist wraptag="ul" break="li" class="no-bullet" limit="10" /> <!-- links by default to form: 'plainlinks.link.txp' unless you specify a different form -->
-    </aside> <!-- /complementary -->
+      <h4>About Jill</h4>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <a href="#">Read more</a></p>
+      <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
+
+      <h4>Keep in touch</h4>
+      ---newsletter subscription form--
+      <ul>
+        <li><txp:feed_link label="RSS feed" /></li>
+        <li><a href="http://www.pinterest.com/whathejill/">Pinterest</a></li>
+        <li><a href="http://instagram.com/whathejill">Instagram</a></li>
+      </ul>
+    </div> <!-- /complementary -->
+
+  </aside> <!-- /.l-container -->
 
   </div> <!-- /.row -->
 

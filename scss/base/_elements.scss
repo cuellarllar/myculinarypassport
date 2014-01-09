@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  @include font-size(1.4); // 14px
+  @include font-size(1.6); // 16px
   background-color: #fff;
   color: $base-font-color;
   font-family: $base-font-family;
@@ -25,27 +25,27 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-  @include font-size(3.2); // 32px
+  @include font-size(3.6); // 36px
 }
 
 h2, .h2 {
-  @include font-size(2.8); // 28px
+  @include font-size(3.2); // 32px
 }
 
 h3, .h3 {
-  @include font-size(2.4); // 24px
+  @include font-size(2.8); // 28px
 }
 
 h4, .h4 {
-  @include font-size(2.0); // 20px
+  @include font-size(2.4); // 24px
 }
 
 h5, .h5 {
-  @include font-size(1.6); // 16px
+  @include font-size(2.0); // 20px
 }
 
 h6, .h6 {
-  @include font-size(1.4); // 14px
+  @include font-size(1.6); // 16px
 }
 
 // BODY TEXT

@@ -350,45 +350,45 @@ html {
       font-size: 55%; } }
 
 body {
-  font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 16px;
+  font-size: 1.6rem;
   background-color: #fff;
   color: #54585a;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova", sans-serif;
   line-height: 1.5em;
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "chaparral-pro-display", serif;
   margin: 0 0  0.3em 0;
   font-weight: bold;
   line-height: 1.25;
   text-rendering: optimizeLegibility; }
 
 h1, .h1 {
+  font-size: 36px;
+  font-size: 3.6rem; }
+
+h2, .h2 {
   font-size: 32px;
   font-size: 3.2rem; }
 
-h2, .h2 {
+h3, .h3 {
   font-size: 28px;
   font-size: 2.8rem; }
 
-h3, .h3 {
+h4, .h4 {
   font-size: 24px;
   font-size: 2.4rem; }
 
-h4, .h4 {
+h5, .h5 {
   font-size: 20px;
   font-size: 2rem; }
 
-h5, .h5 {
+h6, .h6 {
   font-size: 16px;
   font-size: 1.6rem; }
-
-h6, .h6 {
-  font-size: 14px;
-  font-size: 1.4rem; }
 
 p {
   margin: 0 0 0.75em; }
@@ -534,7 +534,7 @@ dl {
   .l-header:after {
     clear: both; }
 
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 48em) {
   .l-header--brand {
     float: left;
     display: block;
@@ -545,7 +545,7 @@ dl {
 
 .l-header--nav {
   text-align: center; }
-  @media screen and (min-width: 35em) {
+  @media screen and (min-width: 48em) {
     .l-header--nav {
       float: left;
       display: block;
@@ -557,7 +557,7 @@ dl {
 
 .l-content {
   padding: 10px; }
-  @media screen and (min-width: 35em) {
+  @media screen and (min-width: 48em) {
     .l-content {
       float: left;
       display: block;
@@ -568,7 +568,7 @@ dl {
 
 .l-aside {
   padding: 10px; }
-  @media screen and (min-width: 35em) {
+  @media screen and (min-width: 48em) {
     .l-aside {
       float: left;
       display: block;
@@ -593,7 +593,7 @@ dl {
   .l-footer:after {
     clear: both; }
 
-@media screen and (min-width: 35em) {
+@media screen and (min-width: 48em) {
   .l-footer--nav {
     float: left;
     display: block;
@@ -604,7 +604,7 @@ dl {
 
 .l-footer--credits {
   padding-left: 5px; }
-  @media screen and (min-width: 35em) {
+  @media screen and (min-width: 48em) {
     .l-footer--credits {
       float: left;
       display: block;
@@ -758,7 +758,7 @@ label,
 select {
   display: block;
   font-size: 1em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "proxima-nova", sans-serif; }
 
 label {
   margin-bottom: 0.375em;
@@ -784,7 +784,7 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
   background-color: white;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   font-size: 1em;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "proxima-nova", sans-serif; }
   textarea:hover,
   input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover {
     border-color: #c5c5c5; }

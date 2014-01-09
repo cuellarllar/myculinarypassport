@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
+
+<head>
+  <title><txp:page_title /></title>
+  <meta charset="utf-8">
+  <meta name="generator" content="Textpattern CMS">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, noodp, noydir">
+
+  <txp:if_individual_article>
+    <!-- add meta author for individual articles -->
+    <txp:meta_author title="1" />
+  </txp:if_individual_article>
+
+<!-- content feeds -->
+  <txp:feed_link flavor="atom" format="link" label="Atom" />
+  <txp:feed_link flavor="rss" format="link" label="RSS" />
+  <txp:rsd />
+
+<!-- specify canonical, more info: http://googlewebmastercentral.blogspot.com/2009/02/specify-your-canonical.html -->
+  <txp:if_individual_article>
+    <link rel="canonical" href="<txp:permlink />">
+    <txp:else />
+    <link rel="canonical" href="<txp:section url="1" />">
+  </txp:if_individual_article>
+
+<!-- css -->
+
+	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
+
+  <script type="text/javascript" src="//use.typekit.net/kvv8ifi.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <script src="<txp:site_url />txp.smacss/js/vendor/custom.modernizr.js"></script>   
+
+</head>
+
+<body class="<txp:section />-page">
+
+  <div class="l-container">
+
+    <!-- header and navigation -->
+    <header role="banner" class="l-header">
+      <div class="l-header--brand">
+        <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+        <h3><txp:site_slogan /></h3>
+      </div>
+      <div class="l-header--nav">
+        <txp:output_form form="tf_primary_navigation" />
+      </div>
+    </header>
+
+    <!-- left (main) column -->
+    <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+
+      <h1>Archive</h1>
+      
+      <txp:article_custom sort="Posted desc" limit="99999" wraptag="ul" break="" class="archive">
+
+        <txp:variable name="year" value='<txp:if_different><txp:posted format="%Y" /></txp:if_different>' />
+        <txp:variable name="month" value='<txp:if_different><txp:posted format="%B" /></txp:if_different>' />
+
+        <txp:if_variable name="year" value=""><txp:else />
+          <txp:if_first_article><txp:else />
+                </ul>
+              </li>
+            </ul>
+          </txp:if_first_article>
+          <li><h2><txp:posted format="%Y" /></h2>
+            <ul>
+        </txp:variable>
+
+        <txp:if_variable name="month" value=""><txp:else />
+          <txp:if_variable name="year" value="">
+              </ul>
+            </li>
+          <txp:else /></txp:if_variable>
+          <li><h3><txp:posted format="%B" /></h3>
+            <ul>
+        </txp:variable>
+
+        <li><txp:posted />: <txp:permlink><txp:title /></txp:permlink></li>
+
+        <txp:if_last_article></ul></li></ul></txp:if_last_article>
+
+      </txp:article_custom>
+
+    </main>
+
+<!-- right (complementary) column -->
+    <aside role="complementary" class="l-aside">
+    
+      <txp:output_form form="tf_search_form" />
+
+      <h4>Categories</h4>
+      <txp:category_list wraptag="ul" break="li"/>
+
+      <h4>Tag Cloud</h4>
+      <txp:tru_tags_cloud section="articles" />
+
+    
+    </div> <!-- /complementary -->
+
+  </aside> <!-- /.l-container -->
+
+  </div> <!-- /.l-container -->
+
+  <!-- footer -->
+  <footer role="contentinfo" class="l-footer">
+    <nav role="navigation" class="l-footer--nav" aria-label="<txp:text item="navigation" />">
+      <txp:section_list default_title='<txp:text item="home" />' include_default="1" wraptag="ul" break="" class="list_inline">
+        <li<txp:if_section name='<txp:section />'><txp:if_search><txp:else /><txp:if_category><txp:else /><txp:if_author><txp:else /> class="active"</txp:if_author></txp:if_category></txp:if_search></txp:if_section>>
+          <txp:section title="1" link="1" />
+        </li>
+      </txp:section_list>
+    </nav>
+    <div class="l-footer--credits">
+      &copy; Jill Compton <txp:php>echo date('Y');</txp:php>
+    </div>
+  </footer>
+
+  <!-- add your own JavaScript here -->
+  <txp:output_form form="tf_javascript" />
+
+</body>
+</html>

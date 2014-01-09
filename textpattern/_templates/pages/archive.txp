@@ -158,7 +158,7 @@
       </txp:section_list>
     </nav>
     <div class="l-footer--credits">
-      <txp:text item="published_with" /> <a rel="external" href="http://textpattern.com" title="<txp:text item="go_txp_com" />">Textpattern CMS</a>.
+      &copy; Jill Compton <txp:php>echo date('Y');</txp:php>
     </div>
   </footer>
 

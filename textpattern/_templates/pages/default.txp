@@ -82,7 +82,7 @@
         <txp:if_category>
 
           <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-            <h1 itemprop="name"><txp:text item="category" /> <txp:category title="1" /></h1>
+            <h1 itemprop="name"><txp:text item="category" />: &ldquo;<txp:category title="1" />&rdquo;</h1>
             <div itemprop="mainContentOfPage">
               <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
             </div>
@@ -92,7 +92,7 @@
 
           <!-- else is this a tag page? -->
           <txp:if_section name="tag">
-            <h1>Tag: &quot;<txp:tru_tags_tag_parameter />&quot;</h1>
+            <h1>Tag: &ldquo;<txp:tru_tags_tag_parameter />&rdquo;</h1>
             <txp:tru_tags_handler listform="article_listing" />
           </txp:if_section>
 

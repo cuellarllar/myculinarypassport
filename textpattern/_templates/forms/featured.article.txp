@@ -4,9 +4,6 @@
   <txp:if_individual_article>
     <h1 itemprop="name"><txp:title /></h1>
     <txp:else />
-    <txp:if_article_image>
-      <txp:images form="images" />
-    </txp:if_article_image>
     <h1 itemprop="name"><a href="<txp:permlink />" itemprop="url"><txp:title /></a></h1>
   </txp:if_individual_article>
 
@@ -20,19 +17,10 @@
 
   
 
-  <txp:if_individual_article>
     <div itemprop="articleBody">
       <txp:body />
     </div>
-    <txp:else />
-    
-    <p><txp:rss_auto_excerpt words="30" striptags="1" linktext="Read More" linkwraptag="span" /></p>
-  </txp:if_individual_article>
 
-<!-- only display categories if they are actually set for an article, otherwise omit -->
-    
-
-  </p>
   <hr>
   <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
   <txp:if_individual_article>

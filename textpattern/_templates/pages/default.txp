@@ -102,8 +102,15 @@
 
             <txp:else />
 
-            <!-- else display articles normally -->
-            <txp:article limit="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
+            <!-- else articles pages -->
+
+            <txp:variable name="page_num" value='<txp:page_url type="pg" />' /><!-- if first page -->
+              <txp:if_variable name="page_num" value="">
+                <txp:article limit="1" form="featured" pageby="5" /> <!-- renders featured article on top of the list -->
+                <txp:article limit="4" offset="1" pageby="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
+              <txp:else /><!-- for 2nd and older pages -->
+              <txp:article limit="5" />
+            </txp:if_variable>
 
           </txp:if_author>
         </txp:if_category>

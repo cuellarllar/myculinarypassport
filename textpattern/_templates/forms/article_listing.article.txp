@@ -8,5 +8,5 @@
     </div>
   </txp:if_excerpt>
 
-  <p class="footnote"><txp:text item="posted" /> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time></p>
+  <p><strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time></p>
 </li>

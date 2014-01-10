@@ -56,6 +56,9 @@
 
       <txp:article id="2" form="simple" />
 
+      <h2>Contact</h2>
+      <txp:zem_contact to="txarly@gmail.com" />
+
     </main>
 
 <!-- right (complementary) column -->

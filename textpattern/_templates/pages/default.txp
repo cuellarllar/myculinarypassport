@@ -154,7 +154,7 @@
       <h4>Latest posts</h4>
       <txp:recent_articles label="" limit="5" break="li" wraptag="ul" class="" />
 
-      <h4>About Jilly</h4>
+      <h4>About Jill</h4>
       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <a href="/about">Read more</a></p>
       <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
 

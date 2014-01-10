@@ -1,0 +1,9 @@
+<article class="post" role="article" itemscope itemtype="http://schema.org/Article">
+  
+  <h1 itemprop="name"><txp:title /></h1>
+
+  <div itemprop="articleBody">
+    <txp:body />
+  </div>
+  
+</article>

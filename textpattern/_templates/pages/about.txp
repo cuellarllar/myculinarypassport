@@ -54,72 +54,7 @@
     <!-- left (main) column -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
 
-      <txp:if_article_list>
-
-        <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-          <h1 itemprop="name"><txp:section title="1" /></h1>
-
-          <div itemprop="mainContentOfPage">
-            <txp:if_article_list>
-              <txp:article form="article_listing" limit="10" wraptag="ul" class="article-list" />
-              <!-- or if you want to list all articles from all sections instead, then replace txp:article with txp:article_custom -->
-              <txp:else />
-              <txp:article />
-            </txp:if_article_list>
-          </div>
-        </section>
-
-        <txp:else />
-
-        <txp:article />
-
-      </txp:if_article_list>
-
-      <!-- add pagination links to foot of article/article listings if there are more articles available,
-      this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
-      <txp:if_individual_article>
-
-        <txp:variable name="more" value='<txp:link_to_prev /><txp:link_to_next />' />
-        <txp:variable name="prev" value='<txp:link_to_prev />' />
-        <txp:variable name="next" value='<txp:link_to_next />' />
-
-        <txp:if_variable name="more" value="">
-          <txp:else />
-          <p class="paginator">
-            <txp:if_variable name="prev" value="">
-              <txp:else />
-              <a rel="prev" href="<txp:link_to_prev />" title="<txp:prev_title />">← <txp:text item="older" /></a>
-            </txp:if_variable>
-
-            <txp:if_variable name="next" value="">
-              <txp:else />
-              <a rel="next" href="<txp:link_to_next />" title="<txp:next_title />"><txp:text item="newer" /> →</a>
-            </txp:if_variable>
-          </p>
-        </txp:if_variable>
-
-        <txp:else />
-
-        <txp:variable name="more" value='<txp:older /><txp:newer />' />
-        <txp:variable name="prev" value='<txp:older />' />
-        <txp:variable name="next" value='<txp:newer />' />
-
-        <txp:if_variable name="more" value="">
-          <txp:else />
-          <p class="paginator">
-            <txp:if_variable name="prev" value="">
-              <txp:else />
-              <a rel="prev" href="<txp:older />" title="<txp:text item="older" />">← <txp:text item="older" /></a>
-            </txp:if_variable>
-
-            <txp:if_variable name="next" value="">
-              <txp:else />
-              <a rel="next" href="<txp:newer />" title="<txp:text item="newer" />"><txp:text item="newer" /> →</a>
-            </txp:if_variable>
-          </p>
-        </txp:if_variable>
-
-      </txp:if_individual_article>
+      <txp:article id="2" form="simple" />
 
     </main>
 
@@ -131,8 +66,6 @@
       <h4>Latest posts</h4>
       <txp:recent_articles label="" limit="5" break="li" wraptag="ul" class="" />
 
-      <h4>About Jill</h4>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <a href="/about">Read more</a></p>
       <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
 
       <h4>Keep in touch</h4>
@@ -145,7 +78,6 @@
     </div> <!-- /complementary -->
 
   </aside> <!-- /.l-container -->
-
   </div> <!-- /.l-container -->
 
   <!-- footer -->

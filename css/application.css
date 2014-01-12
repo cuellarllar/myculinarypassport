@@ -683,7 +683,7 @@ input[type="submit"] {
   overflow: visible;
   margin: 0;
   padding: 0 0.8em;
-  height: 3em;
+  height: 2.6em;
   border: none;
   border-radius: 3px;
   background-color: #00afd7;
@@ -694,7 +694,7 @@ input[type="submit"] {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
   white-space: nowrap;
   font-weight: bold;
-  line-height: 3;
+  line-height: 2.6;
   cursor: pointer; }
   .button:hover, .button_small:hover, .button_large:hover, .button_full:hover, .button_positive:hover, .button_negative:hover, .button_warning:hover, .button_secondary:hover, .button_disabled:hover, button:hover,
   input[type="submit"]:hover, .button:active, .button_small:active, .button_large:active, .button_full:active, .button_positive:active, .button_negative:active, .button_warning:active, .button_secondary:active, .button_disabled:active, button:active,
@@ -859,6 +859,22 @@ select[disabled],
 textarea[disabled] {
   cursor: not-allowed;
   background-color: #eee; }
+
+#mc_embed_signup {
+  *zoom: 1; }
+  #mc_embed_signup:before, #mc_embed_signup:after {
+    content: " ";
+    display: table; }
+  #mc_embed_signup:after {
+    clear: both; }
+
+#mce-EMAIL {
+  float: left;
+  width: 66%; }
+
+#mc-embedded-subscribe {
+  float: right;
+  width: 33%; }
 
 .label, .label_info, .label_success, .label_warning, .label_error {
   font-size: 12px;

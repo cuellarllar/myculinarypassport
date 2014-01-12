@@ -110,3 +110,18 @@ textarea {
     background-color: #eee;
   }
 }
+
+// MAIL CHIMP
+#mc_embed_signup {
+  @include clearfix;
+}
+
+#mce-EMAIL {
+  float: left;
+  width: 66%;
+}
+
+#mc-embedded-subscribe {
+  float: right;
+  width: 33%;
+}

@@ -159,7 +159,23 @@
       <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
 
       <h4>Keep in touch</h4>
-      ---newsletter subscription form--
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="http://myculinarypassport.us3.list-manage2.com/subscribe/post?u=e64ab899ae64799175129b4f7&amp;id=dc32a88209" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+          </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_e64ab899ae64799175129b4f7_dc32a88209" value=""></div>
+            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
       <ul>
         <li><txp:feed_link label="RSS feed" /></li>
         <li><a href="http://www.pinterest.com/whathejill/">Pinterest</a></li>

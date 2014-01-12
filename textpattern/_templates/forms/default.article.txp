@@ -19,7 +19,7 @@
     <txp:if_individual_article>
       <txp:tru_tags_if_has_tags>
         <br>
-        <strong>Tags:</strong> <txp:tru_tags_from_article break=", "  />
+        <strong>Tags:</strong> <span itemprop="keywords"><txp:tru_tags_from_article break=", "  /></span>
       </txp:tru_tags_if_has_tags>
       <br>
       <txp:if_custom_field name="Location">

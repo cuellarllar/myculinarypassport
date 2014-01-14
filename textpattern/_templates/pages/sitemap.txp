@@ -53,39 +53,40 @@
 
     <!-- left (main) column -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+      <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
+        <h1 itemprop="name">Archive</h1>
+          <div itemprop="mainContentOfPage">
+          <txp:article_custom sort="Posted desc" limit="99999" wraptag="ul" break="" class="archive">
 
-      <h1>Archive</h1>
-      
-      <txp:article_custom sort="Posted desc" limit="99999" wraptag="ul" break="" class="archive">
+            <txp:variable name="year" value='<txp:if_different><txp:posted format="%Y" /></txp:if_different>' />
+            <txp:variable name="month" value='<txp:if_different><txp:posted format="%B" /></txp:if_different>' />
 
-        <txp:variable name="year" value='<txp:if_different><txp:posted format="%Y" /></txp:if_different>' />
-        <txp:variable name="month" value='<txp:if_different><txp:posted format="%B" /></txp:if_different>' />
-
-        <txp:if_variable name="year" value=""><txp:else />
-          <txp:if_first_article><txp:else />
+            <txp:if_variable name="year" value=""><txp:else />
+              <txp:if_first_article><txp:else />
+                    </ul>
+                  </li>
                 </ul>
-              </li>
-            </ul>
-          </txp:if_first_article>
-          <li><h2><txp:posted format="%Y" /></h2>
-            <ul>
-        </txp:variable>
+              </txp:if_first_article>
+              <li><h2><txp:posted format="%Y" /></h2>
+                <ul>
+            </txp:variable>
 
-        <txp:if_variable name="month" value=""><txp:else />
-          <txp:if_variable name="year" value="">
-              </ul>
-            </li>
-          <txp:else /></txp:if_variable>
-          <li><h3><txp:posted format="%B" /></h3>
-            <ul>
-        </txp:variable>
+            <txp:if_variable name="month" value=""><txp:else />
+              <txp:if_variable name="year" value="">
+                  </ul>
+                </li>
+              <txp:else /></txp:if_variable>
+              <li><h3><txp:posted format="%B" /></h3>
+                <ul>
+            </txp:variable>
 
-        <li><txp:posted />: <txp:permlink><txp:title /></txp:permlink></li>
+            <li role="article" itemscope="" itemtype="http://schema.org/Article"><time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>: <span itemprop="name"><txp:permlink><txp:title /></txp:permlink></span></li>
 
-        <txp:if_last_article></ul></li></ul></txp:if_last_article>
+            <txp:if_last_article></ul></li></ul></txp:if_last_article>
 
-      </txp:article_custom>
-
+          </txp:article_custom>
+      </div>
+      </section>
     </main>
 
 <!-- right (complementary) column -->

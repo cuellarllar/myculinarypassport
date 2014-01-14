@@ -23,7 +23,9 @@
       </txp:tru_tags_if_has_tags>
       <br>
       <txp:if_custom_field name="Location">
-        <strong>Location:</strong> <txp:custom_field name="Location" /> | </txp:if_custom_field><txp:if_custom_field name="Rating"><strong>Rating:</strong> <txp:custom_field name="Rating" />
+        <strong>Location:</strong> <span itemprop="contentLocation"><txp:custom_field name="Location" /></span> | </txp:if_custom_field>
+      <txp:if_custom_field name="Rating">
+        <span itemprop="review" itemscope itemtype="http://schema.org/Review"><strong>Rating:</strong> <span itemprop="reviewRating"><txp:custom_field name="Rating" /></span> stars.</span>
       </txp:if_custom_field>
     </txp:if_individual_article>
   </p>

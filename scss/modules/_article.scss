@@ -19,7 +19,7 @@
   box-shadow: 0 1px 3px #666;
 }
 
-.featured {
+.post img {
   @include media($medium-screen)  {
     border: 10px solid #fff;
   }

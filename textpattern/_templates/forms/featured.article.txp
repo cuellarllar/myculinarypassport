@@ -21,7 +21,6 @@
       <txp:body />
     </div>
 
-  <hr>
   <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
   <txp:if_individual_article>
     <txp:output_form form="comments_display" />

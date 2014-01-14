@@ -18,7 +18,8 @@
   
 
     <div itemprop="articleBody">
-      <txp:body />
+      <span itemprop="image"><txp:article_image width="0" height="0" class="featured" /></span>
+      <p><txp:rss_auto_excerpt words="50" striptags="1" linktext="Read More" linkwraptag="span" /></p>
     </div>
 
   <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->

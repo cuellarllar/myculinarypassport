@@ -680,6 +680,13 @@ dl {
       height: 200px;
       border: 10px solid #fff; } }
 
+.featured {
+  border: 5px solid #fff;
+  box-shadow: 0 1px 3px #666; }
+  @media screen and (min-width: 48em) {
+    .featured {
+      border: 10px solid #fff; } }
+
 .button, .button_small, .button_large, .button_full, .button_positive, .button_negative, .button_warning, .button_secondary, .button_disabled, button,
 input[type="submit"] {
   font-size: 14px;

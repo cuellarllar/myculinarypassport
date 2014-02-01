@@ -5,18 +5,23 @@
 .l-container {
   @include outer-container;
   max-width: 900px;
+  padding: 0 10px;
 }
 
 // HEADER
 .l-header {
   @include outer-container;
   padding: 10px;
+  background: url(/myculinarypassport/images/logo.png) no-repeat;
+  background-position: -50px -30px;
+  background-size: 360px;
 }
 
 .l-header--brand {
   @include media($medium-screen)  {
     @include span-columns(8);
   }
+  text-indent: -9999px;
 }
 
 .l-header--nav {
@@ -29,27 +34,22 @@
 
 // MAIN COLUMN CONTENT
 .l-content {
-  @include media($medium-screen)  {
-    @include span-columns(8);
-  }
-  padding: 10px;
-}
 
-// SIDEBAR
-.l-aside {
-  @include media($medium-screen)  {
-    @include span-columns(4);
-  }
-  padding: 10px;
 }
 
 // FOOTER
 .l-footer {
   @include outer-container;
-  @include font-size (1.2);
   padding: 20px 0;
-  max-width: 900px;
-  border-top: 1px dashed $light-gray;
+  max-width: none;
+  background-color: #efefef;
+}
+
+.l-footer--col {
+  @include media($medium-screen)  {
+    @include span-columns(4);
+  }
+  padding-right: 20px;
 }
 
 .l-footer--nav {

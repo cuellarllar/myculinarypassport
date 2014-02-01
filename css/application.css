@@ -352,7 +352,6 @@ html {
 body {
   font-size: 16px;
   font-size: 1.6rem;
-  background: url("/images/background.jpg") #f5f3ef repeat;
   color: #54585a;
   font-family: "proxima-nova", sans-serif;
   line-height: 1.5em;
@@ -401,9 +400,12 @@ a {
   text-decoration: none; }
   a:hover {
     color: #484f16; }
-  a:active, a:focus {
+  a:active {
     outline: none;
     color: #484f16; }
+  a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
 
 hr {
   margin: 1.5em 0;
@@ -516,7 +518,8 @@ dl {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 900px; }
+  max-width: 900px;
+  padding: 0 10px; }
   .l-container:before, .l-container:after {
     content: " ";
     display: table; }
@@ -528,21 +531,26 @@ dl {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px; }
+  padding: 10px;
+  background: url(/myculinarypassport/images/logo.png) no-repeat;
+  background-position: -50px -30px;
+  background-size: 360px; }
   .l-header:before, .l-header:after {
     content: " ";
     display: table; }
   .l-header:after {
     clear: both; }
 
-@media screen and (min-width: 48em) {
-  .l-header--brand {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    .l-header--brand:last-child {
-      margin-right: 0; } }
+.l-header--brand {
+  text-indent: -9999px; }
+  @media screen and (min-width: 48em) {
+    .l-header--brand {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      .l-header--brand:last-child {
+        margin-right: 0; } }
 
 .l-header--nav {
   text-align: center; }
@@ -556,43 +564,30 @@ dl {
       .l-header--nav:last-child {
         margin-right: 0; } }
 
-.l-content {
-  padding: 10px; }
-  @media screen and (min-width: 48em) {
-    .l-content {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
-      .l-content:last-child {
-        margin-right: 0; } }
-
-.l-aside {
-  padding: 10px; }
-  @media screen and (min-width: 48em) {
-    .l-aside {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .l-aside:last-child {
-        margin-right: 0; } }
-
 .l-footer {
   *zoom: 1;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  font-size: 12px;
-  font-size: 1.2rem;
   padding: 20px 0;
-  max-width: 900px;
-  border-top: 1px dashed #dddddd; }
+  max-width: none;
+  background-color: #efefef; }
   .l-footer:before, .l-footer:after {
     content: " ";
     display: table; }
   .l-footer:after {
     clear: both; }
+
+.l-footer--col {
+  padding-right: 20px; }
+  @media screen and (min-width: 48em) {
+    .l-footer--col {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      .l-footer--col:last-child {
+        margin-right: 0; } }
 
 @media screen and (min-width: 48em) {
   .l-footer--nav {

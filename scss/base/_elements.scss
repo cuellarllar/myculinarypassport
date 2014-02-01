@@ -7,7 +7,7 @@ html {
 
 body {
   @include font-size(1.6); // 16px
-  background: url('/images/background.jpg') #f5f3ef repeat;
+  // background: url('/myculinarypassport/images/background.jpg') #f5f3ef repeat;
   color: $base-font-color;
   font-family: $base-font-family;
   line-height: $base-line-height;
@@ -62,9 +62,13 @@ a {
     color: $hover-link-color;
   }
 
-  &:active, &:focus {
+  &:active {
     outline: none;
     color: $hover-link-color;
+  }
+  &:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
   }
 }
 

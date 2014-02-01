@@ -67,7 +67,6 @@
       </div>
     </header>
 
-    <!-- left (main) column -->
     <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
 
     <!-- is this the search result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
@@ -150,59 +149,9 @@
 
     </main>
 
-<!-- right (complementary) column -->
-    <aside role="complementary" class="l-aside">
-    
-      <txp:output_form form="tf_search_form" />
+  </div> 
 
-      <h4>Latest posts</h4>
-      <txp:recent_articles label="" limit="5" break="li" wraptag="ul" class="" />
-
-      <h4>About Jill</h4>
-      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. <a href="/about">Read more</a></p>
-      <!-- Feed links, default flavor is rss, so we don't need to specify a flavor on the first feed_link -->
-
-      <h4>Keep in touch</h4>
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
-        <form action="http://myculinarypassport.us3.list-manage2.com/subscribe/post?u=e64ab899ae64799175129b4f7&amp;id=dc32a88209" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <p>Do you want to receive my newsletter? Sign up now!</p>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL"></label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address">
-          </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_e64ab899ae64799175129b4f7_dc32a88209" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </form>
-      </div>
-      <!--End mc_embed_signup-->
-      <p>You can also follow me elsewhere.</p>
-      <ul>
-        <li><txp:feed_link label="RSS feed" /></li>
-        <li><a href="http://www.pinterest.com/whathejill/">Pinterest</a></li>
-        <li><a href="http://instagram.com/whathejill">Instagram</a></li>
-      </ul>
-    </div> <!-- /complementary -->
-
-  </aside> <!-- /.l-container -->
-
-  <!-- footer -->
-  <footer role="contentinfo" class="l-footer">
-    <nav role="navigation" class="l-footer--nav" aria-label="<txp:text item="navigation" />">
-      <txp:section_list default_title='<txp:text item="home" />' include_default="1" exclude="Tag, Articles" wraptag="ul" break="" class="list_inline">
-        <li<txp:if_section name='<txp:section />'><txp:if_search><txp:else /><txp:if_category><txp:else /><txp:if_author><txp:else /> class="active"</txp:if_author></txp:if_category></txp:if_search></txp:if_section>>
-          <txp:section title="1" link="1" />
-        </li>
-      </txp:section_list>
-    </nav>
-    <div class="l-footer--credits">
-      &copy; Jill Compton <txp:php>echo date('Y');</txp:php>
-    </div>
-  </footer>
+  <txp:output_form form="footer" />
 
   <!-- add your own JavaScript here -->
   <txp:output_form form="tf_javascript" />

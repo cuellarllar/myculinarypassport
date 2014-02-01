@@ -701,6 +701,11 @@ dl {
     .post img {
       border: 10px solid #fff; } }
 
+#comments-head {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px dashed #3f3131; }
+
 .button, .button_small, .button_large, .button_full, .button_positive, .button_negative, .button_warning, .button_secondary, .button_disabled, button,
 input[type="submit"] {
   font-size: 14px;

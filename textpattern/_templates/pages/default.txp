@@ -53,57 +53,39 @@
 </head>
 
 <body class="<txp:if_section name=""><txp:if_search>search<txp:else />front</txp:if_search><txp:else /><txp:section /></txp:if_section>-page">
+  <div class="l-card">   
+    <div class="l-container">
 
-  <div class="l-container">
+      <!-- header and navigation -->
+      <header role="banner" class="l-header">
+      	<div class="l-header--brand">
+          <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+    	    <h3><txp:site_slogan /></h3>
+        </div>
+        <div class="l-header--nav">
+          <txp:output_form form="tf_primary_navigation" />
+        </div>
+      </header>
 
-    <!-- header and navigation -->
-    <header role="banner" class="l-header">
-    	<div class="l-header--brand">
-        <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-  	    <h3><txp:site_slogan /></h3>
-      </div>
-      <div class="l-header--nav">
-        <txp:output_form form="tf_primary_navigation" />
-      </div>
-    </header>
+      <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
 
-    <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+      <!-- is this the search result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
+        <txp:if_search>
 
-    <!-- is this the search result page? also omits the pagination links below (uses pagination format within search_results.article.txp instead) -->
-      <txp:if_search>
-
-        <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage">
-          <h1 itemprop="name"><txp:text item="search_results" /></h1>
-          <div itemprop="mainContentOfPage">
-            <txp:output_form form="search_results" />
-          </div>
-        </section>
-
-        <txp:else />
-
-        <!-- else is this an article category list? -->
-        <txp:if_category>
-
-          <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-            <h1 itemprop="name"><txp:text item="category" />: &ldquo;<txp:category title="1" />&rdquo;</h1>
+          <section role="region" itemscope itemtype="http://schema.org/SearchResultsPage">
+            <h1 itemprop="name"><txp:text item="search_results" /></h1>
             <div itemprop="mainContentOfPage">
-              <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
+              <txp:output_form form="search_results" />
             </div>
           </section>
 
           <txp:else />
 
-          <!-- else is this a tag page? -->
-          <txp:if_section name="tag">
-            <h1>Tag: &ldquo;<txp:tru_tags_tag_parameter />&rdquo;</h1>
-            <txp:tru_tags_handler listform="article_listing" />
-          </txp:if_section>
-
-          <!-- else is this an article author list? -->
-          <txp:if_author>
+          <!-- else is this an article category list? -->
+          <txp:if_category>
 
             <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
-              <h1 itemprop="name"><txp:text item="author" /> <txp:author /></h1>
+              <h1 itemprop="name"><txp:text item="category" />: &ldquo;<txp:category title="1" />&rdquo;</h1>
               <div itemprop="mainContentOfPage">
                 <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
               </div>
@@ -111,50 +93,68 @@
 
             <txp:else />
 
-            <!-- else articles pages -->
+            <!-- else is this a tag page? -->
+            <txp:if_section name="tag">
+              <h1>Tag: &ldquo;<txp:tru_tags_tag_parameter />&rdquo;</h1>
+              <txp:tru_tags_handler listform="article_listing" />
+            </txp:if_section>
 
-            <txp:variable name="page_num" value='<txp:page_url type="pg" />' /><!-- if first page -->
-              <txp:if_variable name="page_num" value="">
-                <txp:article limit="1" form="featured" pageby="5" /> <!-- renders featured article on top of the list -->
-                <txp:article limit="4" offset="1" pageby="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
-              <txp:else /><!-- for 2nd and older pages -->
-              <txp:article limit="5" />
-            </txp:if_variable>
+            <!-- else is this an article author list? -->
+            <txp:if_author>
 
-          </txp:if_author>
-        </txp:if_category>
+              <section role="region" itemscope itemtype="http://schema.org/CollectionPage">
+                <h1 itemprop="name"><txp:text item="author" /> <txp:author /></h1>
+                <div itemprop="mainContentOfPage">
+                  <txp:article form="article_listing" limit="5" wraptag="ul" class="article-list" />
+                </div>
+              </section>
 
-        <!-- add pagination links to foot of article/article listings/category listings if there are more articles available,
-        this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
-        <txp:variable name="more" value='<txp:older /><txp:newer />' />
-        <txp:variable name="prev" value='<txp:older />' />
-        <txp:variable name="next" value='<txp:newer />' />
-
-        <txp:if_variable name="more" value="">
-          <txp:else />
-          <p class="paginator">
-            <txp:if_variable name="prev" value="">
               <txp:else />
-              <a rel="prev" href="<txp:older />" title="<txp:text item="older" />">← <txp:text item="older" /></a>
-            </txp:if_variable>
 
-            <txp:if_variable name="next" value="">
-              <txp:else />
-              <a rel="next" href="<txp:newer />" title="<txp:text item="newer" />"><txp:text item="newer" /> →</a>
-            </txp:if_variable>
-          </p>
-        </txp:if_variable>
+              <!-- else articles pages -->
 
-      </txp:if_search>
+              <txp:variable name="page_num" value='<txp:page_url type="pg" />' /><!-- if first page -->
+                <txp:if_variable name="page_num" value="">
+                  <txp:article limit="1" form="featured" pageby="5" /> <!-- renders featured article on top of the list -->
+                  <txp:article limit="4" offset="1" pageby="5" /> <!-- links by default to form: 'default.article.txp' unless you specify a different form -->
+                <txp:else /><!-- for 2nd and older pages -->
+                <txp:article limit="5" />
+              </txp:if_variable>
 
-    </main>
+            </txp:if_author>
+          </txp:if_category>
 
-  </div> 
+          <!-- add pagination links to foot of article/article listings/category listings if there are more articles available,
+          this method is more flexibile than using simple txp:link_to_prev/txp:link_to_next or txp:older/txp:newer tags -->
+          <txp:variable name="more" value='<txp:older /><txp:newer />' />
+          <txp:variable name="prev" value='<txp:older />' />
+          <txp:variable name="next" value='<txp:newer />' />
 
-  <txp:output_form form="footer" />
+          <txp:if_variable name="more" value="">
+            <txp:else />
+            <p class="paginator">
+              <txp:if_variable name="prev" value="">
+                <txp:else />
+                <a rel="prev" href="<txp:older />" title="<txp:text item="older" />">← <txp:text item="older" /></a>
+              </txp:if_variable>
 
-  <!-- add your own JavaScript here -->
-  <txp:output_form form="tf_javascript" />
+              <txp:if_variable name="next" value="">
+                <txp:else />
+                <a rel="next" href="<txp:newer />" title="<txp:text item="newer" />"><txp:text item="newer" /> →</a>
+              </txp:if_variable>
+            </p>
+          </txp:if_variable>
 
+        </txp:if_search>
+
+      </main>
+
+    </div> 
+
+    <txp:output_form form="footer" />
+
+    <!-- add your own JavaScript here -->
+    <txp:output_form form="tf_javascript" />
+  </div>
 </body>
 </html>

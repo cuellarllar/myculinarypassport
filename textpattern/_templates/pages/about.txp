@@ -37,65 +37,34 @@
 </head>
 
 <body class="<txp:section />-page">
+  <div class="l-card">
+    <div class="l-container">
 
-  <div class="l-container">
+      <!-- header and navigation -->
+      <header role="banner" class="l-header">
+        <div class="l-header--brand">
+          <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
+          <h3><txp:site_slogan /></h3>
+        </div>
+        <div class="l-header--nav">
+          <txp:output_form form="tf_primary_navigation" />
+        </div>
+      </header>
 
-    <!-- header and navigation -->
-    <header role="banner" class="l-header">
-      <div class="l-header--brand">
-        <h1><txp:link_to_home><txp:site_name /></txp:link_to_home></h1>
-        <h3><txp:site_slogan /></h3>
-      </div>
-      <div class="l-header--nav">
-        <txp:output_form form="tf_primary_navigation" />
-      </div>
-    </header>
+      <!-- left (main) column -->
+      <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
 
-    <!-- left (main) column -->
-    <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
+        <txp:article id="2" form="simple" />
 
-      <txp:article id="2" form="simple" />
+      </main>
 
-    </main>
+    </aside> <!-- /.l-container -->
+    </div> <!-- /.l-container -->
 
-<!-- right (complementary) column -->
-    <aside role="complementary" class="l-aside">
-    
-      <txp:output_form form="tf_search_form" />
+    <txp:output_form form="footer" />
 
-      <h4>Keep in touch</h4>
-      <!-- Begin MailChimp Signup Form -->
-      <div id="mc_embed_signup">
-        <form action="http://myculinarypassport.us3.list-manage2.com/subscribe/post?u=e64ab899ae64799175129b4f7&amp;id=dc32a88209" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <p>Do you want to receive my newsletter? Sign up now!</p>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL"></label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email address">
-          </div>
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-              <div style="position: absolute; left: -5000px;"><input type="text" name="b_e64ab899ae64799175129b4f7_dc32a88209" value=""></div>
-            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </form>
-      </div>
-      <!--End mc_embed_signup-->
-      <p>You can also follow me elsewhere.</p>
-      <ul>
-        <li><txp:feed_link label="RSS feed" /></li>
-        <li><a href="http://www.pinterest.com/whathejill/">Pinterest</a></li>
-        <li><a href="http://instagram.com/whathejill">Instagram</a></li>
-      </ul>
-    </div> <!-- /complementary -->
-
-  </aside> <!-- /.l-container -->
-  </div> <!-- /.l-container -->
-
-  <txp:output_form form="footer" />
-
-  <!-- add your own JavaScript here -->
-  <txp:output_form form="tf_javascript" />
-
+    <!-- add your own JavaScript here -->
+    <txp:output_form form="tf_javascript" />
+  </div>
 </body>
 </html>

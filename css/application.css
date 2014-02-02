@@ -558,9 +558,9 @@ dl {
       width: 31.76157%;
       font-size: 22px;
       font-size: 2.2rem;
+      padding-top: 25px;
       text-align: right;
-      line-height: 1.6;
-      padding-top: 25px; }
+      line-height: 1.6; }
       .l-header--nav:last-child {
         margin-right: 0; }
       .l-header--nav li {
@@ -639,6 +639,12 @@ dl {
       .l-footer--credits:last-child,
       .l-sitemap-aside:last-child {
         margin-right: 0; } }
+
+.l-sitemap-content {
+  margin-top: 30px; }
+
+.l-sitemap-aside {
+  margin-top: 90px; }
 
 .l-right {
   float: right; }

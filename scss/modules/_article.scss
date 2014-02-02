@@ -12,7 +12,7 @@
   }
   float: left;
   overflow: hidden;
-  margin: 0 20px 20px 0;
+  margin: 0 40px 20px 0;
   width: 100px;
   height: 100px;
   border: 5px solid #fff;
@@ -25,6 +25,11 @@
   }
   border: 5px solid #fff;
   box-shadow: 0 1px 3px #666;
+}
+
+.featured {
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 #comments-head {

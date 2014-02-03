@@ -43,6 +43,7 @@
   
   <script type="text/javascript" src="//use.typekit.net/kvv8ifi.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 <!-- js libraries -->
   <script src="<txp:site_url />txp.smacss/js/vendor/custom.modernizr.js"></script>

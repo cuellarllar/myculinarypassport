@@ -1,7 +1,12 @@
 .post {
   @include clearfix;
-  padding: 40px 0;
+  padding: 40px 0 20px 0;
   border-bottom: 1px dashed #3f3131;
+  word-wrap: break-word;
+}
+
+.post--body {
+  margin-top: 40px;
 }
 
 .post--image {

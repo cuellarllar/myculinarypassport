@@ -13,7 +13,7 @@
   <p>
     <strong><txp:text item="posted" />:</strong> <time datetime="<txp:posted format="iso8601" />" itemprop="datePublished"><txp:posted /></time>
     <txp:if_article_category>
-      | 
+      &nbsp;&nbsp;|&nbsp;&nbsp;
       <strong><txp:text item="categories" />:</strong> <span itemprop="keywords"><txp:category1 title="1" link="1" /><txp:if_article_category number="1"><txp:if_article_category number="2">, </txp:if_article_category></txp:if_article_category><txp:category2 title="1" link="1" /></span>
     </txp:if_article_category>
     <txp:if_individual_article>
@@ -29,11 +29,10 @@
       </txp:if_custom_field>
     </txp:if_individual_article>
   </p>
-
   
 
   <txp:if_individual_article>
-    <div itemprop="articleBody">
+    <div itemprop="articleBody" class="post--body">
       <txp:body />
     </div>
     <txp:else />

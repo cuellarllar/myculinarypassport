@@ -361,7 +361,7 @@ body {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "adelle", serif;
-  margin: 0 0  0.3em 0;
+  margin: 0.5em 0  0.3em 0;
   font-weight: bold;
   line-height: 1.25;
   text-rendering: optimizeLegibility; }
@@ -558,7 +558,7 @@ dl {
       width: 31.76157%;
       font-size: 22px;
       font-size: 2.2rem;
-      padding-top: 25px;
+      padding-top: 40px;
       text-align: right;
       line-height: 1.6; }
       .l-header--nav:last-child {
@@ -689,13 +689,17 @@ dl {
 
 .post {
   *zoom: 1;
-  padding: 40px 0;
-  border-bottom: 1px dashed #3f3131; }
+  padding: 40px 0 20px 0;
+  border-bottom: 1px dashed #3f3131;
+  word-wrap: break-word; }
   .post:before, .post:after {
     content: " ";
     display: table; }
   .post:after {
     clear: both; }
+
+.post--body {
+  margin-top: 40px; }
 
 .post--image {
   float: left;

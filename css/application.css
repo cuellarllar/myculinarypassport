@@ -352,7 +352,7 @@ html {
 body {
   font-size: 16px;
   font-size: 1.6rem;
-  background: url("/myculinarypassport/images/background.jpg") #f5f3ef repeat;
+  background: url("/images/background.jpg") #f5f3ef repeat;
   color: #54585a;
   font-family: "adelle sans", sans-serif;
   line-height: 1.5em;
@@ -576,13 +576,13 @@ dl {
   margin: 20px auto;
   padding: 5%;
   width: 95%;
-  background: white url(/myculinarypassport/images/seal.png) no-repeat;
+  background: white url(/images/seal.png) no-repeat;
   background-position: -40px -40px;
   background-size: 400px;
   box-shadow: 0 0 4px #7a7a7a; }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     .l-card {
-      background: white url(/myculinarypassport/images/seal@2x.png) no-repeat;
+      background: white url(/images/seal@2x.png) no-repeat;
       background-position: -40px -40px;
       background-size: 400px; } }
 

@@ -25,4 +25,7 @@
     <txp:variable name="page-title" value='<txp:title no_widow="0" /> | <txp:site_name />' />
   </txp:if_article_list>
 </txp:if_section>
+<txp:if_section name="tag">
+  <txp:variable name="page-title" value='Tag: <txp:tru_tags_tag_parameter /> | <txp:site_name />' />
+</txp:if_section>
 <title><txp:variable name="page-title" /></title>

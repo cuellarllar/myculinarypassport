@@ -2,7 +2,7 @@
 <html lang="<txp:lang />" dir="<txp:text item="lang_dir" />">
 
 <head>
-  <title><txp:error_status /></title>
+  <txp:output_form form="page_title" />
   <meta charset="utf-8">
   <meta name="generator" content="Textpattern CMS">
   <meta name="viewport" content="width=device-width, initial-scale=1">

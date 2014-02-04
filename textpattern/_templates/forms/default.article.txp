@@ -37,7 +37,7 @@
     </div>
     <txp:else />
     
-    <p><txp:rss_auto_excerpt words="40" striptags="1" linktext="" linkwraptag="span" /></p>
+    <p><txp:rss_auto_excerpt words="40" striptags="1" linktext="" /></p>
   </txp:if_individual_article>
 
 <!-- only display categories if they are actually set for an article, otherwise omit -->

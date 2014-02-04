@@ -1,4 +1,9 @@
 @media print {
+
+  html {
+    font-size: 50%; // make font smaller
+  }
+
   * {
     background: transparent !important;
     color: #000 !important; // Black prints faster: h5bp.com/s
@@ -42,7 +47,7 @@
   }
 
   img {
-    max-width: 100% !important;
+    max-width: 70% !important;
   }
 
   @page {
@@ -60,4 +65,12 @@
   h3 {
     page-break-after: avoid;
   }
+
+  .l-footer,
+  .l-header,
+  #comments-head,
+  .paginator {
+    display: none; // hide stuff
+  }
+
 }

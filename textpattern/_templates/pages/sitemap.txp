@@ -107,6 +107,7 @@
 
     <!-- add your own JavaScript here -->
     <txp:output_form form="tf_javascript" />
+    <txp:output_form form="analytics" />
   </div>
 </body>
 </html>

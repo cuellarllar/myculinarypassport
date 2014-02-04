@@ -40,10 +40,8 @@
     <p><txp:rss_auto_excerpt words="40" striptags="1" linkwraptag="span" /></p>
   </txp:if_individual_article>
 
-<!-- only display categories if they are actually set for an article, otherwise omit -->
-    
+  <!-- only display categories if they are actually set for an article, otherwise omit -->
 
-  </p>
   <!-- if this is an individual article then add the comments section via form: comments_display.article.txp -->
   <txp:if_individual_article>
     <txp:output_form form="comments_display" />

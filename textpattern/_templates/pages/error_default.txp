@@ -51,7 +51,8 @@
 
       <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
         <h1 class=""><txp:error_status /></h1>
-        <p class="alert_error"><txp:error_message /></p>
+        <p class="alert_error"><i class="fa fa-exclamation-triangle"></i> <txp:error_message /></p>
+        <p>You can try to find it using the search box in the footer or checking the <a href="/archive">blog archive</a>. Thanks.</p>
       </main>
     </div> <!-- /.l-container -->
     <txp:output_form form="footer" />

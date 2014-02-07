@@ -32,7 +32,7 @@
   
 
   <txp:if_individual_article>
-    <div itemprop="articleBody" class="post--body">
+    <div itemprop="articleBody" class="post__body">
       <txp:body />
     </div>
     <txp:else />

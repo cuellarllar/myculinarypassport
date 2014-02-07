@@ -58,10 +58,10 @@
 
       <!-- header and navigation -->
       <header role="banner" class="l-header">
-        <div class="l-header--brand">
+        <div class="l-header__brand">
           <h1><txp:link_to_home><img src="/images/logo@2x.png" alt="My Culinary Passport" width="400"></txp:link_to_home></h1>
         </div>
-        <div class="l-header--nav">
+        <div class="l-header__nav">
           <txp:output_form form="tf_primary_navigation" />
         </div>
       </header>

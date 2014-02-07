@@ -12,13 +12,13 @@
   @include outer-container;
 }
 
-.l-header--brand {
+.l-header__brand {
   @include media($medium-screen)  {
     @include span-columns(8);
   }
 }
 
-.l-header--nav {
+.l-header__nav {
   @include font-size(2);
   @include media($medium-screen)  {
     @include span-columns(4);
@@ -68,34 +68,10 @@
   border-top: 1px dashed #3f3131;
 }
 
-.l-footer--col {
+.l-footer__col {
   @include media($medium-screen)  {
     @include span-columns(4);
   }
   padding-right: 10px;
   padding-left: 10px;
-}
-
-.l-footer--nav,
-.l-sitemap-content {
-  @include media($medium-screen)  {
-    @include span-columns(8);
-  }
-}
-
-.l-footer--credits,
-.l-sitemap-aside {
-  @include media($medium-screen)  {
-    @include span-columns(4);
-    text-align: right;
-  }
-  padding-left: 5px;
-}
-
-.l-sitemap-content {
-  margin-top: 30px;
-}
-
-.l-sitemap-aside {
-  margin-top: 90px;
 }

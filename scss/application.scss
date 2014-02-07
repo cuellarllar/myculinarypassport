@@ -24,7 +24,8 @@
   "base/state";
 
 // Layouts
-@import "layouts/global";
+@import "layouts/global",
+  "layouts/sitemap";
 
 // Modules
 @import "modules/alerts",

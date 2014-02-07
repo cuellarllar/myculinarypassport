@@ -53,10 +53,10 @@
 
       <!-- header and navigation -->
       <header role="banner" class="l-header">
-        <div class="l-header--brand">
+        <div class="l-header__brand">
           <h1><txp:link_to_home><img src="/images/logo@2x.png" alt="My Culinary Passport" width="400"></txp:link_to_home></h1>
         </div>
-        <div class="l-header--nav">
+        <div class="l-header__nav">
           <txp:output_form form="tf_primary_navigation" />
         </div>
       </header>
@@ -103,7 +103,7 @@
       <aside role="complementary" class="l-sitemap-aside">
       
         <h4>Categories</h4>
-        <txp:category_list wraptag="ul" break="li" class="list_unstyled" />
+        <txp:category_list wraptag="ul" break="li" class="list--unstyled" />
 
         <h4>Tag Cloud</h4>
         <txp:tru_tags_cloud section="articles" />

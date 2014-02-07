@@ -120,23 +120,3 @@ blockquote {
   border-left: 2px solid $base-border-color;
   color: lighten($base-font-color, 15);
 }
-
-// LISTS
-ul, ol {
-  margin: 0;
-  margin-bottom: $base-line-height / 2;
-  padding: 0;
-  padding-left: $base-line-height;
-}
-
-dl {
-  margin-bottom: $base-line-height / 2;
-  line-height: $base-line-height;
-  dt {
-    margin-top: $base-line-height / 2;
-    font-weight: bold;
-  }
-  dd {
-    margin: 0;
-  }
-}

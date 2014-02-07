@@ -3,4 +3,9 @@
   a:last-child {
     float: right;
   }
+  & > a {
+    padding: 3px 10px 2px 10px;
+    border: 1px solid $red;
+    border-radius: 50px;
+  }
 }

@@ -1,0 +1,18 @@
+// SITEMAP PAGE LAYOUT
+///////////////////////////////////////////////////////////////////////////////
+
+.l-sitemap-content {
+  @include media($medium-screen)  {
+    @include span-columns(8);
+    margin-top: 30px;
+  }
+}
+
+.l-sitemap-aside {
+  @include media($medium-screen)  {
+    @include span-columns(4);
+    text-align: right;
+    margin-top: 90px;
+  }
+  padding-left: 5px;
+}

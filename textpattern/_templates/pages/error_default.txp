@@ -41,17 +41,17 @@
 
       <!-- header and navigation -->
       <header role="banner" class="l-header">
-        <div class="l-header--brand">
+        <div class="l-header__brand">
           <h1><txp:link_to_home><img src="/images/logo@2x.png" alt="My Culinary Passport" width="400"></txp:link_to_home></h1>
         </div>
-        <div class="l-header--nav">
+        <div class="l-header__nav">
           <txp:output_form form="tf_primary_navigation" />
         </div>
       </header>
 
       <main role="main" class="l-content" aria-label="<txp:text item="main_content" />">
         <h1 class=""><txp:error_status /></h1>
-        <p class="alert_error"><i class="fa fa-exclamation-triangle"></i> <txp:error_message /></p>
+        <p class="alert--error"><i class="fa fa-exclamation-triangle"></i> <txp:error_message /></p>
         <p>You can try to find it using the search box in the footer or checking the <a href="/archive">blog archive</a>. Thanks.</p>
       </main>
     </div> <!-- /.l-container -->

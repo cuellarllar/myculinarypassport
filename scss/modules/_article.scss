@@ -5,11 +5,11 @@
   word-wrap: break-word;
 }
 
-.post--body {
+.post__body {
   margin-top: 40px;
 }
 
-.post--image {
+.post__image {
   @include media($medium-screen)  {
     width: 200px;
     height: 200px;

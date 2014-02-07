@@ -8,10 +8,10 @@
   overflow: visible;              
   margin: 0;
   padding: 0 0.8em;       
-  height: 2.6em;           
+  height: 3em;           
   border: none; 
   border-radius: 3px;        
-  background-color: $green;
+  background-color: $medium-blue;
   box-shadow: 0 1px 0 rgba(0,0,0,0.6);
   color: #fff;     
   vertical-align: middle;
@@ -19,7 +19,7 @@
   text-shadow: 0 -1px 0 rgba(0,0,0,0.3);    
   white-space: nowrap;
   font-weight: bold;         
-  line-height: 2.6;
+  line-height: 3;
   cursor: pointer;
   &:hover,
   &:active,
@@ -52,7 +52,7 @@
 }
 
 // SMALL BUTTON
-.button_small {
+.button--small {
   @extend %button;
   padding-right: 0.5em;
   padding-left: 0.5em;
@@ -61,7 +61,7 @@
 }
 
 // LARGE BUTTON
-.button_large {
+.button--large {
   @extend %button;
   padding-right: 1.5em;
   padding-left: 1.5em;
@@ -70,7 +70,7 @@
 }
 
 // FULL WIDTH BUTTON
-.button_full {
+.button--full {
   @extend %button;
   padding-right: 0;
   padding-left: 0;
@@ -82,7 +82,7 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 // BUTTON POSITIVE
-.button_positive{
+.button--positive{
   @extend %button;
   background-color: $green;
   color: #fff;
@@ -92,7 +92,7 @@
 }
 
 // BUTTON NEGATIVE
-.button_negative {
+.button--negative {
   @extend %button;
   background-color: $red;
   color: #fff;
@@ -102,7 +102,7 @@
 }
 
 // BUTTON WARNING
-.button_warning {
+.button--warning {
   @extend %button;
   background-color: $orange;
   color: #fff;
@@ -112,7 +112,7 @@
 }
 
 // BUTTON SECONDARY
-.button_secondary {
+.button--secondary {
   @extend %button;
   background-color: $light-gray;
   color: #fff;
@@ -122,7 +122,7 @@
 }
 
 // DISABLED BUTTON
-.button_disabled {
+.button--disabled {
   @extend %button;
   background-color: $light-blue;
   cursor: default;
@@ -131,10 +131,4 @@
   &:focus {
     background-color: $light-blue;
   }
-}
-
-.paginator a {
-  padding: 3px 10px 2px 10px;
-  border: 1px solid $red;
-  border-radius: 50px;
 }

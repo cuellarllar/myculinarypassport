@@ -31,9 +31,9 @@
         <!--End mc_embed_signup-->
         <p>You can also follow me elsewhere.</p>
         <ul class="list--social">
-          <li><a href="/rss/?section=articles" title="RSS Feed"><i class="fa fa-rss"></i></a></li>
-          <li><a href="http://www.pinterest.com/whathejill/" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-          <li><a href="http://instagram.com/whathejill" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="/rss/?section=articles" title="RSS Feed"><i class="icon-feed"></i></a></li>
+          <li><a href="http://www.pinterest.com/whathejill/" title="Pinterest"><i class="icon-pinterest"></i></a></li>
+          <li><a href="http://instagram.com/whathejill" title="Instagram"><i class="icon-instagram"></i></a></li>
         </ul>
       </div>
       

@@ -90,17 +90,6 @@ select {
   }
 }
 
-// FORM BUTTONS
-button,
-input[type="submit"] {
-  @extend %button;
-  @include appearance(none);
-  vertical-align: middle;
-  white-space: nowrap;
-  cursor: pointer;
-  user-select: none;
-}
-
 // DISABLED ITEMS
 input,
 select,

@@ -42,6 +42,10 @@
 
 	<link rel="stylesheet" href="<txp:site_url />txp.smacss/css/application.css">
 
+<!-- typekit -->
+  <script type="text/javascript" src="//use.typekit.net/kvv8ifi.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
 </head>
 
 <body class="<txp:section />-page">

@@ -544,7 +544,7 @@ blockquote {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%; }
+    width: 82.94039%; }
     .l-header__brand:last-child {
       margin-right: 0; } }
 
@@ -557,7 +557,7 @@ blockquote {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
+      width: 14.70196%;
       font-size: 22px;
       font-size: 2.2rem;
       padding-top: 40px;
@@ -572,6 +572,8 @@ blockquote {
   .l-header__nav li {
     float: left;
     padding-right: 20px; }
+  .l-header__nav .active > a {
+    border-bottom: 1px dashed #bf2713; }
 
 .l-card {
   overflow: auto;

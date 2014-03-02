@@ -58,9 +58,9 @@
     </div> <!-- /.l-container -->
     <txp:output_form form="footer" />
 
-    <!-- add your own JavaScript here -->
-    <txp:output_form form="tf_javascript" />
-    <txp:output_form form="analytics" />
   </div>
+  <!-- add your own JavaScript here -->
+  <txp:output_form form="tf_javascript" />
+  <txp:output_form form="analytics" />
 </body>
 </html>

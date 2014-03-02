@@ -1,42 +1,40 @@
-  <!-- footer -->
-  <footer role="contentinfo" class="l-footer">
-    <div class="l-container">
-      <div class="l-footer__col">
-        <txp:output_form form="tf_search_form" />
-        <h4>Latest posts</h4>
-        <txp:recent_articles label="" limit="5" break="li" wraptag="ul" class="" />
-      </div>
-      <div class="l-footer__col">
-        <h4>About Jill</h4>
-        <p>Jill loves to write about food, restaurant and culinary experiences. <a href="/about">Read more</a></p>
-      </div>
-      <div class="l-footer__col">
-        <h4>Keep in touch</h4>
-        <!-- Begin MailChimp Signup Form -->
-        <div id="mc_embed_signup">
-          <form action="http://myculinarypassport.us3.list-manage2.com/subscribe/post?u=e64ab899ae64799175129b4f7&amp;id=dc32a88209" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-            <p>Do you want to receive my newsletter? Sign up now!</p>
-            <div class="mc-field-group">
-              <label for="mce-EMAIL"></label>
-              <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
-            </div>
-              <div id="mce-responses" class="">
-                <div class="response" id="mce-error-response" style="display:none"></div>
-                <div class="response" id="mce-success-response" style="display:none"></div>
-              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                <div style="position: absolute; left: -5000px;"><input type="text" name="b_e64ab899ae64799175129b4f7_dc32a88209" value=""></div>
-              <div class=""><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button--positive"></div>
-          </form>
-        </div>
-        <!--End mc_embed_signup-->
-        <p>You can also follow me elsewhere.</p>
-        <ul class="list--social">
-          <li><a href="/rss/?section=articles" title="RSS Feed"><i class="icon-feed"></i></a></li>
-          <li><a href="http://www.pinterest.com/whathejill/" title="Pinterest"><i class="icon-pinterest"></i></a></li>
-          <li><a href="http://instagram.com/whathejill" title="Instagram"><i class="icon-instagram"></i></a></li>
-        </ul>
-      </div>
-      
+<!-- footer -->
+<footer role="contentinfo" class="l-footer">
+  <div class="l-container">
+    <div class="l-footer__col">
+      <txp:output_form form="tf_search_form" />
+      <h4>Latest posts</h4>
+      <txp:recent_articles label="" limit="5" break="li" wraptag="ul" class="" />
     </div>
-    
-  </footer>
+    <div class="l-footer__col">
+      <h4>About Jill</h4>
+      <p>Jill loves to write about food, restaurant and culinary experiences. <a href="/about">Read more</a></p>
+    </div>
+    <div class="l-footer__col">
+      <h4>Keep in touch</h4>
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="http://myculinarypassport.us3.list-manage2.com/subscribe/post?u=e64ab899ae64799175129b4f7&amp;id=dc32a88209" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <p>Do you want to receive my newsletter? Sign up now!</p>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL"></label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+          </div>
+            <div id="mce-responses" class="">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;"><input type="text" name="b_e64ab899ae64799175129b4f7_dc32a88209" value=""></div>
+            <div class=""><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button--positive"></div>
+        </form>
+      </div>
+      <!--End mc_embed_signup-->
+      <p>You can also follow me elsewhere.</p>
+      <ul class="list--social">
+        <li><a href="/rss/?section=articles" title="RSS Feed"><i class="icon-feed"></i></a></li>
+        <li><a href="http://www.pinterest.com/whathejill/" title="Pinterest"><i class="icon-pinterest"></i></a></li>
+        <li><a href="http://instagram.com/whathejill" title="Instagram"><i class="icon-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
